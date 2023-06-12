@@ -20,5 +20,25 @@ function getDigits(string){
     }
     return newstr;
 }
+// console.log(getDigits("Os1a3y5w7h9a2t4?6!8?0")) 
 
-console.log(getDigits("Os1a3y5w7h9a2t4?6!8?0")) 
+// Acronyms
+// Create a function that, given a string, returns the string’s acronym 
+// (first letter of the word capitalized). 
+// You are allowed to use .split() and .toUpperCase().
+function acronym(str){
+    str = str.toUpperCase()
+    let splitstr = str.split(" ")
+    let acro = ""
+    for(let s in splitstr){
+        if(splitstr[s][0] === undefined){
+            continue
+        }
+        else {
+            acro += splitstr[s][0];
+        }
+    }
+    return acro;
+}
+
+console.log(acronym(" there's no free lunch - gotta pay yer way. "))

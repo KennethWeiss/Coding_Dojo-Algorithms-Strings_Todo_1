@@ -56,5 +56,22 @@ function countNonSpaces(str){
     return spaces;
 }
 
-console.log(countNonSpaces("Honey pie, you are driving me crazy"))
-console.log(countNonSpaces("Hello world !"))
+// console.log(countNonSpaces("Honey pie, you are driving me crazy"))
+// console.log(countNonSpaces("Hello world !"))
+
+
+// Create a function that, 
+// given an array of strings and a numerical value, 
+// returns an array that only contains strings longer than or equal to the given value.
+function removeShorterStrings(strlist, size){
+    newarr = []
+    for(s in strlist){
+        if(strlist[s].length>=size){
+            newarr.push(strlist[s])
+        }
+    }
+    console.log(newarr)
+}
+
+removeShorterStrings(['Good morning', 'sunshine', 'the', 'Earth', 'says', 'hello'], 4);
+removeShorterStrings(['There', 'is', 'a', 'bug', 'in', 'the', 'system'], 3);

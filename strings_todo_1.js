@@ -41,4 +41,20 @@ function acronym(str){
     return acro;
 }
 
-console.log(acronym(" there's no free lunch - gotta pay yer way. "))
+// console.log(acronym(" there's no free lunch - gotta pay yer way. "))
+
+function countNonSpaces(str){
+    spaces = 0;
+    for(s in str){
+        if(str[s]===" "){
+            continue;
+        }
+        else{
+            spaces++;
+        }
+    }
+    return spaces;
+}
+
+console.log(countNonSpaces("Honey pie, you are driving me crazy"))
+console.log(countNonSpaces("Hello world !"))
